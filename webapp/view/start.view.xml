@@ -1,0 +1,72 @@
+<mvc:View 
+	controllerName="sapui5.demo.model.controller.start" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m">
+	<Page 
+		id="page" 
+		navButtonPress="onNavPress" 
+		showNavButton="true" 
+		title="{i18n>startViewTitle}">
+		<content>
+			<GenericTile 
+				id="jsonTile"
+				class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				header="{i18n>JSONTileHeader}"
+				subheader="{i18n>JSONTileSubheader}" 
+				press="onShowData">
+				<tileContent>
+					<TileContent>
+						<content>
+							<ImageContent src="./image/logo-json.png"/>
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+		 
+			<GenericTile 
+				id="odataTile"
+				class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				header="{i18n>ODATATileHeader}"
+				subheader="{i18n>ODATATileSubheader}" 
+				press="onShowData">
+				<tileContent>
+					<TileContent>
+						<content>
+							<ImageContent src="./image/open-data-protocol-2.png"/>
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+			
+			<GenericTile 
+				id="deviceTile"
+				class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				header="{i18n>DEVICETileHeader}"
+				subheader="{i18n>DEVICETileSubheader}" 
+				press="onShowData">
+				<tileContent>
+					<TileContent>
+						<content>
+							<ImageContent src="sap-icon://it-system"/>
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+			
+			<GenericTile 
+				id="ressourceTile"
+				class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+				header="{i18n>RESSOURCETileHeader}"
+				subheader="{i18n>RESSOURCETileSubheader}" 
+				press="onShowData">
+				<tileContent>
+					<TileContent>
+						<content>
+							<ImageContent src="sap-icon://globe"/>
+						</content>
+					</TileContent>
+				</tileContent>
+			</GenericTile>
+		</content>
+	</Page>
+</mvc:View>

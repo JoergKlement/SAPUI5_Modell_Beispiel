@@ -1,0 +1,26 @@
+<mvc:View 
+	controllerName="sapui5.demo.model.controller.json" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page 
+		id="jsonPage" 
+		navButtonPress="onNavPress" 
+		showNavButton="true" 
+		title="{i18n>jsonViewTitle}">
+		<content>
+			<layout:VerticalLayout id="verticalLayout">
+				<Text text="Title: {JSONDATA>title}"></Text>
+				<Text text="Glossary Division Title: {JSONDATA>GlossDiv/title}"></Text>
+				<Text text="Glossary Entry ID: {JSONDATA>GlossDiv/GlossList/GlossEntry/ID}"></Text>
+				<Text text="Glossary Entry SortAs: {JSONDATA>GlossDiv/GlossList/GlossEntry/SortAs}"></Text>
+				<Text text="Glossary Entry GlossTerm: {JSONDATA>GlossDiv/GlossList/GlossEntry/GlossTerm}"></Text>
+				<Text text="Glossary Entry Acronym: {JSONDATA>GlossDiv/GlossList/GlossEntry/Acronym}"></Text>
+				<Text text="Glossary Entry Abbrev: {JSONDATA>GlossDiv/GlossList/GlossEntry/Abbrev}"></Text>
+				<Text text="Glossary Entry Definition para: {JSONDATA>GlossDiv/GlossList/GlossEntry/GlossDef/para}"></Text>
+				<Text text="Glossary Entry Definition GlossSeeAlso: {JSONDATA>GlossDiv/GlossList/GlossEntry/GlossDef/GlossSeeAlso}"></Text>
+				<Text text="Glossary Entry GlossSee: {JSONDATA>GlossDiv/GlossList/GlossEntry/GlossSee}"></Text> 
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

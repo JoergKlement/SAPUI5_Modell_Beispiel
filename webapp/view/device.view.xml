@@ -1,0 +1,22 @@
+<mvc:View controllerName="sapui5.demo.model.controller.device" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page id="page" navButtonPress="onNavPress" showNavButton="true" title="{i18n>odataViewTitle}">
+		<content>
+			<layout:VerticalLayout>
+				<Text text="Google Chrome Browser: {DEVICE>/browser/chrome}"></Text>
+				<Text text="mobile: {DEVICE>/browser/mobile}"></Text>
+				<Text text="Version: {DEVICE>/browser/version}"></Text>
+				<Text text="Orientierung Landscape: {DEVICE>/orientation/landscape}"></Text>
+				<Text text="Orientierung Portrait: {DEVICE>/orientation/portrait}"></Text>
+				<Text text="OS: {DEVICE>/os/name}"></Text>
+				<Text text="Version: {DEVICE>/os/version}"></Text>
+				<Text text="Bildschirm Höhe: {DEVICE>/resize/height}"></Text>
+				<Text text="Bildschirm Breite: {DEVICE>/resize/width}"></Text>
+				<Text text="Systemtyp Desktop: {DEVICE>/system/desktop}"></Text>
+				<Text text="Systemtyp Tablet: {DEVICE>/system/tablet}"></Text>
+				<Text text="Systemtyp Telefon: {DEVICE>/system/phone}"></Text>
+				<Text text="Dieses Feld ist nur sichtbar, wenn es sich um den Gerätetyp PHONE handelt" visible="{DEVICE>/system/phone}"></Text>
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>

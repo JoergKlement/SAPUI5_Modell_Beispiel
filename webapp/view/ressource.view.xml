@@ -1,0 +1,11 @@
+<mvc:View controllerName="sapui5.demo.model.controller.ressource" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	xmlns:layout="sap.ui.layout">
+	<Page id="page" navButtonPress="onNavPress" showNavButton="true" title="{i18n>ressourceViewTitle}">
+		<content>
+			<layout:VerticalLayout>
+				<Text text="Ressourcentest i18n: {i18n>ressourceTest}"></Text>
+				<Text text="Ressourcentest RESSOURCE: {RESSOURCE>/Message}"></Text>
+			</layout:VerticalLayout>
+		</content>
+	</Page>
+</mvc:View>
