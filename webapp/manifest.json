@@ -15,8 +15,7 @@
 				"uri": "/destinations/Northwind/V3/Northwind/Northwind.svc/",
 				"type": "OData",
 				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "model/metadata.xml"
+					"odataVersion": "2.0"
 				}
 			}
 		}
