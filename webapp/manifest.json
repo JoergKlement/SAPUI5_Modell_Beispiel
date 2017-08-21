@@ -52,7 +52,7 @@
 			"Northwind": {
 				"dataSource": "mainService",
 				"settings": {
-					"useBatch": false
+					"useBatch": true
 				}
 			},
 			"i18n": {
